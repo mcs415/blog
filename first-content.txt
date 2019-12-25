@@ -1,0 +1,175 @@
+<div class="container container-flex">
+    <main role="main">
+        <article class="article-featured>"
+            <img src="images/featured-image.jpg" alt="" class="article-image" width="70%" height="300">
+            <article class="article-featured">
+                <h2 class="article-title">mv [OPTION]... [-T] SOURCE DEST<</h2>
+                <img src="#" alt="" class="article-image">
+                <h2 class="article-title">About Me</h2>
+                <p class="article-body">Hello internet.  My name is Morgan, and this is my home page.  I live the outskirts of the San Francisco bay area. I'm currently studying the basics of computer programming.  I generally watch a lot of video lecture on youtube.  This website for examplecan be found on Free Code Camp's course on Responsive Web Design  at <a href="https://www.youtube.com/watch?v=srvUrASNj0s">Kevin Powell's Responsive Web Design.</a>  The contact form was mimicked from Brad Traversy's terrific tutorial at <a href="https://www.youtube.com/watch?v=nF9g1825mwk">Send Emails with Nodemailer</a>. I also received some help on stack overflow by Daniel Schrodinger. I use github pages to host the site and the javascript side of the contact form was deployed by Heroku Whatever your interests I sincerely wish you the best in your life. </p>
+                <a href="#" class="article-read-more"></a>
+    </article>
+
+
+
+<div class="container container-flex">
+<article class="article-recent">
+    <div class="article-recent-main">
+        <h2 class="article-title">Basic Get String Function in C</h2>
+            <p class="article-body"> This is a basic example of how to retrieve a string from the user is C programming language. C programming language was created in 1974 by Dennis Ritchie and Brian Kernagin.  It is the backbone of the Unix operating system.  I hope to continue publishing entry-level programming posts.</p>
+<pre><code>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#define MAX 64
+int main(void)
+{
+    char str[MAX];
+    int n;
+    printf("type a string, limit to 64 characters.\n");
+    fgets(str, sizeof str, stdin);
+    n=strlen(str);
+    char *t = (char*)malloc(n + 1);
+    strcpy(t,str);
+    printf("copy of s: %s", str);
+    printf("copy of t: %s\n", t);
+    free(t);
+}
+
+</code></pre></p>
+<a href="#" class="article-read-more"></a>
+</div>
+</article>
+</div>
+
+<div class="container container-flex">
+<article class="article-recent">
+<div class="article-recent-secondary">
+    <img src="" alt="" class="article-image">
+        <p class="article-info"></p>
+            <article class="article-recent"></article>
+                <div class="article-recent-main">
+                    <h2 class="article-title">You Got it Made! </h2>
+                        <p class="article-body"><p> I think this is about the most simple example of make for a C++ file.
+<pre><code>
+CC=g++
+CFLAGS=-c -g -Wall
+
+all: main
+
+main: main.o Log.o
+    $(CC) main.o Log.o -o main
+
+main.o: main.cpp
+    $(CC) $(CFLAGS) main.cpp
+
+Log.o: Log.cpp
+    $(CC) $(CFLAGS) Log.cpp
+
+clean:
+    rm -rf *o main
+            </code></pre></p>
+        <a href="#" class="article-read-more"></a>
+    </div>
+</article>
+</div>
+
+<div class="container container-flex">
+<article class="article-recent">
+<div class="article-recent-secondary"</div>
+    <figure>
+        <img src="images/jamiscommuter.jpg" class="articles-image" width="33%" height="200" >
+        <img src="images/mikeskynardspecialized.jpg" class="articles-image" width="33%" height="200" >
+    </figure>
+        <p class="article-info"></p>
+            <div class="article-recent-main">
+                <h2 class="article-title">Bicyle</h2>
+                    <p class="article-body">This is a $100 craigslist bike I bought.  It's a 6061 aluminum, an alloy first discovered for it's high weldability and low weight in 1935, framed Jamis, Commuter 3.  It somehow lost its nifty nexus hub. Current single speed gearing is 38t x 20t, that yields a 1.9:1 gear ratio sort of slow on the flats. I'm going to try a smaller 16t cog in the back and Ill end up getting a higher top speed, more difficult ride on the hills.  That ratio will be 2.375:1. Here is more about this: <a href="https://surlybikes.com/info_hole/spew/spew_single-speed_gearing_101">Surly Single Speed gearing</a>
+                    Im currrently staying in Morgan Hill at my parents home to Specialized Bikes. The picture of the man up above is Mike Sinyard the owner of Specialized.  Yesterday I saw a large crowd of competive cyclists heading towards the backroads.</p>
+            <a href="#" class="article-read-more"></a>
+        </div>
+    </article>
+</div>
+</main>
+
+<aside class="sidebar">
+    <div class="sidebar-widget">
+        <h2 class="widget">Links</h2>
+            <img src="images/penguin.jpeg" alt="" class="widget-image" width="100%" height="150">
+                <p class="widget-body">
+                    <ul>
+                    <li><a href="https://www.debian.org/">Debian</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/">MDN docs</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLypxmOPCOkHXbJhUgjRaV2pD9MJkIArhg">Shellwave Youtube C Linux Tutorial</a></li>
+                    <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/index.htm">MIT 6.00</a></li>
+                    <li><a href="https://cs50.harvard.edu/">Harvard's CS50</a></li>
+                    <li><a href="https://www.freecodecamp.org/learn">Free Code Camp</a></li>
+                    <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
+                    <li><a href="https://atom.io/">Atom Hackable Text Editor for 21st Century</a></li>
+                    <li><a href="https://github.com/">Github</a></li>
+                    <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                    <li><a href="https://talkpython.fm/">Talk Python To Me: Podcast</a></li>
+                    <li><a href="https://fullstackopen.com/en/">Full Stack MOOC Hellenski</a></li>
+                    <li><a href="https://www.desmos.com/">Desmos</a></li>
+                    <li><a href="https://www.mathway.com/Algebra">Mathway</a></li>
+                </ul></p>
+            </div>
+
+<div class="sidebar-widget"></div>
+    <h2 class="widget-title">Royal Free Images</h2>
+        <img src="#"" alt="" class="widget-image" width="100%" height="150">
+            <div class="widget-recent-post">
+                <p><ul>
+                    <li><a href="https://www.pexels.com/">Pexels</a></li>
+                    <li><a href="https://gratisography.com/">Gratisography</a></li>
+                    <li><a href="https://unsplash.com/">Unsplash</a></li>
+                    </ul>
+            </div>
+
+
+<div class="widget-recent-post">
+    <h3 class="widget-post-title">Public Webcam links</h3>
+        <ul>
+            <li><a href="https://www.webcamtaxi.com/en/">webcamtaxi</a></li><li><a href="https://www.timeanddate.com/time/map/">timeanddate.com UTC time zone information</a>
+            </ul>
+</div>
+
+<div class="widget-recent-post">
+    <img src="images/12steps.jpg" alt="" class="widget-image" width="100%" height="150">
+        <h3 class="widget-post-title">Twelve Steps</h3>
+            <p>I have been going to meetings on and off since I was twenty.  Here is link to the twelve steps of alcoholics anonymous.  I believe addict or not, the twelve steps can help you navigate through your spiritual matters. <a href="images/12steps.jpg"> 12 steps of alcoholics anonymous. </a></p>
+            <img src="" alt="" class="widget-image">
+</div>
+    </div>
+
+</aside>
+
+</div>
+</main>
+
+    <footer>
+        <p>MCS Blogger Home Page</p>
+    </footer>
+
+<script src="js/main.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154715107-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-154715107-1');
+</script>
+</body>
+</html>
+<!-- <p id="test"></p>
+<script>
+var date = new Date();
+document.getElementById("test").innerHTML = date;
+</script> -->
