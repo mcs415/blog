@@ -5,12 +5,27 @@ body {
     font-weight: 300;
 
 }
+img {
+    max-width: 100%;
+    display: block;
+}
 main {
     width: 70%;
 }
-
 aside {
     width: 20%;
+}
+
+@media (max-width: 675px) {
+    .container-flex {
+        flex-direction: row;
+    }
+    main {
+        width: 75%;
+    }
+    aside {
+        width: 20%;
+    }
 }
 
 .container {
@@ -18,15 +33,47 @@ aside {
     max-width: 900px;
     margin: 0 auto;
 }
-
 .container-flex {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
-img {
-    max-width: 100%;
-    display: block;
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
 }
+.aticle-recent-main {
+    order: 2;
+}
+.article-recent-secondary {
+    order: 1;
+    padding: 2em 0;
+}
+@media (min-width: 675px) {
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .article-recent-secondary {
+        width: 30%
+    }
+    .article-recent-main {
+        width: 68%;
+    }
+    .article-image {
+        width: 100%;
+        min-height: 250px;
+        object-fit: cover;
+    }
+}
+
+.sidebar-widget {
+    box-sizing: border-box;
+    border: 10px solid #F8F8F8;
+    justify-content: space-between;
+}
+
 h1,
 h2 {
     font-family: 'Lora', serif;
@@ -99,26 +146,6 @@ li {
     list-style-type: none;
     padding: 3px;
 }
-code {
-    color: #707070;
-}
-.article-featured {
-    border-bottom: #707070;
-    padding-bottom: 2em;
-    margin-bottom: 2em;
-}
-.article-recent {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2em;
-}
-
-.article-recent-main {
-    order: 2;
-}
-.article-recent-main {
-    order: 1; */
-}
 .article-read-more
 .article-info {
     font-size: .75rem;
@@ -132,19 +159,12 @@ code {
 .article-info:focus {
     color: #143744;
 }
-
-@media (max-width: 675px) {
-    .container-flex {
-        flex-direction: row;
-    }
-    main {
-        width: 75%;
-    }
-    aside {
-        width: 20%;
-    }
+.current-page {
+    border-bottom: 1px solid #707070;
 }
-
+.current-page:hover {
+    color: #707070;
+}
 footer {
     text-align: center;
 }
