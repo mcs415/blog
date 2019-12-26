@@ -38,12 +38,18 @@ aside {
     flex-direction: row;
     justify-content: space-between;
 }
+.article-featured {
+    border-bottom: #707070;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
 .article-recent {
     display: flex;
     flex-direction: column;
     margin-bottom: 2em;
 }
-.aticle-recent-main {
+
+.article-recent-main {
     order: 2;
 }
 .article-recent-secondary {
@@ -63,8 +69,7 @@ aside {
     }
     .article-image {
         width: 100%;
-        min-height: 250px;
-        object-fit: cover;
+        min-height: 300px;
     }
 }
 

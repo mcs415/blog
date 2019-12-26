@@ -12,15 +12,37 @@
 
 <div class="container container-flex">
     <main role="main">
-
-        <article class="article-featured>"
-            <h2 class="article-featured">Computer Programming</h2>
-            <p class="article-info"></p>
-            <p class="article-body">I have been spending the last few months trying to learn how to Computer Program.  I attempted to go to a local community college to take classes while fullfilling some of my other obligations and I got stuck taking an pre-requisite math class.  I've learned some of the basics and I hope I can share this with you here.<br>
-            </p>
-        <a href="</p>
+        <article class="article-recent">
+        <div class="article-recent-main">
+            <h2 class="article-title">Learning How to Computer Program</h2>
+            <p class="article-info">December 28, 2019</p>
+                <p class="article-body">I have been spending the last few months rather disappointingly, trying to learn how to Computer Program.  I attempted to go to a local community college to take classeswhile fullfilling some of my other obligations and I got stuck taking an pre-requisite math class.  I've learned some of the basics and I hope I can share this with you here.</p>
+            </div>
             <div class="article-recent-secondary">
-                <img src="images/pointersc.jpg.jpg" alt="">
+                <img class="article-image" src="images/pointersc.jpg" alt="">
             </div>
         </article>
-/h1>
+        <figure>
+          <figcaption>Get String.c</figcaption><pre>
+#include &ltstdio.h&gt
+#include &ltstring.h&gt
+#include &ltstdlib.h&gt
+#define MAX 64
+int main(void)
+{
+    char str[MAX];
+    int n;
+    printf("type a string, limit to 15 characters.\n");
+    fgets(str, sizeof str, stdin);
+    n=strlen(str);
+    char *t = (char*)malloc(n + 1);
+    strcpy(t,str);
+    printf("copy of s: %s", str);
+    printf("copy of t: %s\n", t);
+    free(t);
+}
+</code></pre>
+</figure>
+</article>
+</body>
+</html>
